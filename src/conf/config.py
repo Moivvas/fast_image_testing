@@ -8,6 +8,7 @@ class Settings(BaseSettings):
     algorithm: str = 'HS256'
     redis_host: str = 'localhost'
     redis_port: int = 6379
+    redis_password: str = "password"
     postgres_db: str = 'db'
     postgres_user: str = 'some_user'
     postgres_password: str = 'password'
