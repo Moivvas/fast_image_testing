@@ -36,7 +36,7 @@ app.mount("/static", StaticFiles(directory=BASE_DIR / "static"), name="static")
 async def root(request: Request):
     return templates.TemplateResponse('index.html', {"request": request, "title": "FAST_image_App"})
 
-@app.get("/api/healthchecker")
+@app.get("/project/healthchecker")
 def healthchecker(db: Session = Depends(get_db)):
     try:
         # Make request
